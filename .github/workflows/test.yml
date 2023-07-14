@@ -24,5 +24,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Test
-        run: npm test
+      - name: Unit test
+        run: npm test:unit
+      
+      - name: E2E test
+        run: npm test:e2e
